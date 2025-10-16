@@ -67,46 +67,95 @@ video.addEventListener('play', () => {
 
     const infoBebidas = {
       happy: {
-        bebida: "Jugo de piña natural",
-        frutas: ["Piña"],
-        beneficios: ["Refresca", "Mejora el ánimo", "Aporta vitamina C", "Energiza naturalmente", "Favorece digestión"],
-        ingredientes: ["Lavar y cortar la piña", "Licuar con agua fría", "Agregar un poco de azúcar opcional", "Servir frío"]
-      },
-      sad: {
         bebida: "Jugo de naranja natural",
         frutas: ["Naranja"],
-        beneficios: ["Eleva el ánimo", "Fortalece sistema inmune", "Aporta antioxidantes", "Combate fatiga y estrés"],
-        ingredientes: ["Exprimir las naranjas", "Mezclar con agua fría", "Agregar un poco de azúcar opcional", "Servir fresco"]
+        beneficios: [
+          "Refrescante y dulce",
+          "Llena de energía positiva",
+          "Aporta vitamina C",
+          "Mejora el ánimo",
+          "Fortalece el sistema inmunológico",
+          "Hidrata naturalmente"
+        ],
+        ingredientes: ["Exprimir la naranja", "Servir natural, sin agua ni azúcar"]
       },
-      angry: {
+      sad: {
         bebida: "Jugo de sandía natural",
         frutas: ["Sandía"],
-        beneficios: ["Calma la tensión", "Hidrata", "Aporta vitaminas", "Refresca y revitaliza"],
-        ingredientes: ["Cortar la sandía", "Licuar con agua", "Opcional: un poco de azúcar", "Servir frío"]
+        beneficios: [
+          "Muy jugosa y natural",
+          "Levanta el ánimo",
+          "Hidrata profundamente",
+          "Rica en antioxidantes",
+          "Favorece digestión",
+          "Refresca y revitaliza"
+        ],
+        ingredientes: ["Cortar la sandía", "Servir natural, sin agua ni azúcar"]
+      },
+      angry: {
+        bebida: "Jugo de melón natural",
+        frutas: ["Melón"],
+        beneficios: [
+          "Refrescante y calmante",
+          "Relaja el cuerpo y la mente",
+          "Aporta vitaminas",
+          "Favorece la hidratación",
+          "Alivia tensión y estrés",
+          "Dulce natural sin azúcar"
+        ],
+        ingredientes: ["Cortar el melón", "Servir natural, sin agua ni azúcar"]
       },
       fearful: {
-        bebida: "Jugo de guaraná y limón",
-        frutas: ["Guaraná", "Limón"],
-        beneficios: ["Aumenta energía", "Mejora concentración", "Mantiene alerta"],
-        ingredientes: ["Preparar extracto de guaraná", "Mezclar con agua y jugo de limón", "Servir frío"]
+        bebida: "Jugo de mandarina natural",
+        frutas: ["Mandarina"],
+        beneficios: [
+          "Aroma cítrico y suave",
+          "Brinda tranquilidad",
+          "Rico en vitamina C",
+          "Estimula positividad",
+          "Fortalece sistema inmunológico",
+          "Ayuda a la concentración"
+        ],
+        ingredientes: ["Exprimir la mandarina", "Servir natural, sin agua ni azúcar"]
       },
       disgusted: {
-        bebida: "Jugo verde natural",
-        frutas: ["Kale", "Manzana verde", "Pepino"],
-        beneficios: ["Desintoxica", "Aporta vitaminas y minerales", "Favorece digestión", "Purifica organismo"],
-        ingredientes: ["Lavar ingredientes", "Licuar con agua", "Agregar limón al gusto", "Servir fresco"]
+        bebida: "Jugo de piña natural",
+        frutas: ["Piña"],
+        beneficios: [
+          "Tropical y purificadora",
+          "Limpia emociones negativas",
+          "Refuerza digestión",
+          "Aporta vitaminas y minerales",
+          "Estimula energía natural",
+          "Antiinflamatoria"
+        ],
+        ingredientes: ["Cortar la piña", "Servir natural, sin agua ni azúcar"]
       },
       surprised: {
-        bebida: "Jugo de kiwi natural",
-        frutas: ["Kiwi"],
-        beneficios: ["Estimula y refresca", "Aporta vitamina C y antioxidantes", "Ayuda a concentración y frescura"],
-        ingredientes: ["Pelar y cortar kiwi", "Licuar con agua fría", "Servir frío"]
+        bebida: "Jugo de toronja natural",
+        frutas: ["Toronja (pomelo)"],
+        beneficios: [
+          "Cítrica y jugosa",
+          "Despierta los sentidos",
+          "Da energía",
+          "Aporta antioxidantes",
+          "Favorece digestión",
+          "Refresca y revitaliza"
+        ],
+        ingredientes: ["Exprimir la toronja", "Servir natural, sin agua ni azúcar"]
       },
       neutral: {
-        bebida: "Jugo de limón natural",
-        frutas: ["Limón"],
-        beneficios: ["Refresca", "Aporta vitamina C", "Mantiene energía y bienestar diario"],
-        ingredientes: ["Exprimir limón", "Mezclar con agua fría", "Agregar azúcar opcional", "Servir fresco"]
+        bebida: "Jugo de papaya natural",
+        frutas: ["Papaya"],
+        beneficios: [
+          "Suave y dulce",
+          "Equilibrada y armoniosa",
+          "Mantiene calma y bienestar",
+          "Favorece digestión",
+          "Rica en vitaminas A y C",
+          "Refresca naturalmente"
+        ],
+        ingredientes: ["Cortar la papaya", "Servir natural, sin agua ni azúcar"]
       }
     };
 
