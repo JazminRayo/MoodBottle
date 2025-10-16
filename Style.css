@@ -1,0 +1,59 @@
+/* Canvas encima del video */
+canvas {
+  pointer-events: none;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+/* Emociones con colores suaves */
+.emotion-happy { background-color: #FEF9C3; color: #CA8A04; }
+.emotion-sad { background-color: #DBEAFE; color: #1D4ED8; }
+.emotion-angry { background-color: #FECACA; color: #B91C1C; }
+.emotion-fearful { background-color: #DDD6FE; color: #6D28D9; }
+.emotion-disgusted { background-color: #D1FAE5; color: #065F46; }
+.emotion-surprised { background-color: #FFFBEB; color: #A16207; }
+.emotion-neutral { background-color: #F3F4F6; color: #374151; }
+
+/* Animación suave de entrada */
+section {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mejora la visualización en pantallas pequeñas */
+@media (max-width: 640px) {
+  video, canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  section {
+    padding: 1.2rem;
+  }
+}
+
+/* Ajusta canvas sobre el video */
+canvas {
+  pointer-events: none;
+  width: 400px;
+  height: 300px;
+}
+
+/* Mensajes de emoción con colores */
+.emotion-happy { background-color: #FFEDD5; color: #D97706; }
+.emotion-sad { background-color: #DBEAFE; color: #1E40AF; }
+.emotion-angry { background-color: #FECACA; color: #B91C1C; }
+.emotion-fearful { background-color: #EDE9FE; color: #6D28D9; }
+.emotion-disgusted { background-color: #D1FAE5; color: #065F46; }
+.emotion-surprised { background-color: #FEF9C3; color: #A16207; }
+.emotion-neutral { background-color: #F3F4F6; color: #374151; }

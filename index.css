@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #fff7e6;
+    color: #000000;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #ffa64d, #ffb366);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 1px 1px 5px #cc6600;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #ffb366;
+    padding: 15px;
+    gap: 25px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #ffd699;
+    color: #000000;
+}
+
+/* Sección de inicio */
+#inicio {
+    padding: 80px 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 25px;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyfEt_hdVh9Er-91DnkT3-w-FvpNW8QaxMMA4ITKlGWZJAXHJw2YcuvxhYkgAbDY66npw&usqp=CAU') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+#inicio::after {
+    content: "";
+    position: absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.35);
+    border-radius: 25px;
+}
+
+#inicio h2, #inicio p, #inicio .botones-inicio {
+    position: relative;
+    z-index: 1;
+}
+
+#inicio h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+#inicio p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+/* Botones principales */
+.botones-inicio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff704d;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #ffd699;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+.btn-secundario {
+    background: #ffa64d;
+}
+
+/* Productos, galería y contacto */
+section {
+    padding: 60px 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 20px;
+    background: #ffedd6;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.producto {
+    background: #fff7f0;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #ffa64d;
+    text-align: center;
+    padding: 25px;
+    font-size: 1em;
+    color: #fff;
+}
