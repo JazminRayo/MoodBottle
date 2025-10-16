@@ -36,7 +36,7 @@ Ingredientes: ${ingredientes}
 });
 
 // Servir frontend
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname)));
 
 // Puerto dinámico para Render
 const PORT = process.env.PORT || 3000;
